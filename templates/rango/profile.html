@@ -1,0 +1,19 @@
+{% extends "new_base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block body_block %}
+<div class="panel panel-default">
+	<div class="panel-heading">{{ user.username }}</div>
+	<div class="panel-body">
+		<img src="{{ profile.picture.url }}" width="400" height="200">
+	</div>
+	<ul class="list-group">
+		<li class="list-group-item">{{ profile.website }}</li>
+		<li class="list-group-item">{{ user.email }}</li>
+		{% if user.is_authenticated %}
+		<li class="list-group-item"><a href="{% url "add_profile" %}">Edit</a></li>
+		{% endif %}
+	</ul>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'new_base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}About{% endblock %}
+{% block body_block %}
+	<div class="page-header">
+        <strong>{{ boldmessage }}</strong><br />
+        <i>You have visited {{ visits }} times.</i>
+    </div>
+       <div>
+            <img src="{% static "images/rango.png" %}" alt="Picture of Rango" /> <!-- New line -->
+       </div>
+{% endblock %}      

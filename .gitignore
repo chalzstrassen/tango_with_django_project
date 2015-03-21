@@ -1,0 +1,10 @@
+__pycache__/
+add_page.html
+*.sqlite3
+pass.txt
+populate_rango.py
+base.html
+*.jpg
+
+
+

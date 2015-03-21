@@ -1,0 +1,15 @@
+{% extends "new_base.html" %}
+
+{% block title %}List of Users{% endblock %}
+
+{% block body_block %}
+{% if user.is_authenticated %}
+	<div class="panel panel-default">
+		
+	</div>
+		 
+{% else %}
+<h1>Please log in to see profiles</h1>
+{% endif %}
+
+{% endblock %}
